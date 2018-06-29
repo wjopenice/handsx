@@ -1,0 +1,46 @@
+{include file="common/header" /}
+
+{include file="common/memu" /}
+
+<script type="text/javascript" src="/static/js/index/infor.js"></script>
+<div id="pageAll">
+    <div class="pageTop">
+        <div class="page">
+            <img src="/static/index/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+                href="#">商户管理</a>&nbsp;-</span>&nbsp;商户信息
+        </div>
+    </div>
+    <div class="page ">
+        <div class="banneradd bor">
+            <div class="baTop">
+                <span>商户信息</span>
+            </div>
+            <div class="baBody">
+                <form class="layui-form layui-form-pane" action="">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">商户号</label>
+                        <div class="layui-input-inline">
+                            <input name="title" autocomplete="off" class="layui-input" type="text" value="{$data.account}" disabled>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">商户名称</label>
+                        <div class="layui-input-inline">
+                            <input name="username" autocomplete="off" class="layui-input" value="{$data.nickname}" type="text" disabled>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">KEY</label>
+                        <div class="layui-input-inline">
+                            <input name="paykey" autocomplete="off" id="key" class="layui-input" value="{$key}" type="text" disabled>
+                        </div>
+                        {if condition="$key eq ''"}
+                        <button class="layui-btn" lay-submit lay-filter="generate" id="generate">生成</button>
+                        {/if}
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

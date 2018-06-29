@@ -1,0 +1,96 @@
+{include file="common/header" /}
+
+{include file="common/memu" /}
+
+<script type="text/javascript" src="/static/js/index/subst.js"></script>
+
+<body>
+<div id="pageAll">
+    <div class="pageTop">
+        <div >
+            <img src="/static/index/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+                href="#">提现管理</a>&nbsp;-</span>&nbsp;代付提现记录
+        </div>
+    </div>
+    <div id="content" style="width: 100%;">
+        <blockquote class="layui-elem-quote" style="height: 100px;">
+            <div>
+                <span class="layui-badge">扫码</span>
+                <span class="layui-badge layui-bg-orange">提现费率：{$revenue.revenue}</span>
+                <span class="layui-badge layui-bg-orange">可提现金额：{$revenue.sub_money ? : '0.00'}</span>
+                <span class="layui-badge layui-bg-orange">已提现金额：{$al_with_money.scan ? : '0.00'}</span>
+                <span class="layui-badge layui-bg-orange">扫码未结算金额：{$no_money.scan ? : '0.00'}</span>
+                <span class="layui-badge layui-bg-orange">已结算金额：{$yes_money.scan ? : '0.00'}</span>
+            </div>
+            <div>
+                <span class="layui-badge">H5支付宝</span>
+                <span class="layui-badge layui-bg-blue">提现费率：{$revenue.h5_alipay_revenue}</span>
+                <span class="layui-badge layui-bg-blue">可提现金额：{$revenue.sub_h5_alipay}</span>
+                <span class="layui-badge layui-bg-blue">已提现金额：{$al_with_money.h5_alipay ? : '0.00'}</span>
+                <span class="layui-badge layui-bg-blue">未结算金额：{$no_money.alipay ? : '0.00'}</span>
+                <span class="layui-badge layui-bg-blue">已结算金额：{$yes_money.alipay ? : '0.00'}</span>
+            </div>
+            <div>
+                <span class="layui-badge">H5微信</span>
+                <span class="layui-badge layui-bg-green">提现费率：{$revenue.h5_wetch_revenue}</span>
+                <span class="layui-badge layui-bg-green">可提现金额：{$revenue.sub_h5_wetch}</span>
+                <span class="layui-badge layui-bg-green">已提现金额：{$al_with_money.h5_wetch ? : '0.00'}</span>
+                <span class="layui-badge layui-bg-green">未结算金额：{$no_money.wetch ? : '0.00'}</span>
+                <span class="layui-badge layui-bg-green">已结算金额：{$yes_money.wetch ? : '0.00'}</span>
+            </div>
+            <form class="layui-form" style="float:right;width:100%">
+
+                <div class="layui-inline">
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input" name="start" id="start" placeholder="提现申请开始时间">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input" name="end" id="end" placeholder="提现申请结束时间">
+                    </div>
+                </div>
+
+                <div class="layui-input-inline" style="margin:0;">
+                    <div class="layui-input-inline">
+                        <div class="layui-input-block" style="margin-left:0">
+                            <select name="status" lay-filter="aihao">
+                                <option value="" selected>请选择提现状态</option>
+                                <option value="0">待审核</option>
+                                <option value="1">审核不通过</option>
+                                <option value="2">审核通过</option>
+                                <option value="3">打款中</option>
+                                <option value="4">提现完成</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layui-input-inline" style="margin:0;">
+                    <div class="layui-form-mid layui-word-aux" style="padding:0 !important;float:right;">
+                        <button lay-filter="search" class="layui-btn" lay-submit><i class="fa fa-search" aria-hidden="true"></i> 查询</button>
+                    </div>
+                </div>
+                <div class="layui-input-inline" style="margin:0;">
+                    <div class="layui-form-mid layui-word-aux" style="padding:0 !important;float:right;">
+                        <submit id="accounts" class="layui-btn"><i aria-hidden="true"></i> 结算</submit>
+                    </div>
+                </div>
+                <div class="layui-input-inline" style="margin:0;">
+                    <div class="layui-form-mid layui-word-aux" style="padding:0 !important;float:right;">
+                        <submit id="applyFor" class="layui-btn"><i aria-hidden="true"></i> 扫码申请提现</submit>
+                        <submit id="applyAlipay" class="layui-btn"><i aria-hidden="true"></i> H5支付宝申请提现</submit>
+                        <submit id="applyWetch" class="layui-btn"><i aria-hidden="true"></i> H5微信申请提现</submit>
+                    </div>
+                </div>
+
+            </form>
+        </blockquote>
+        <table id="test" lay-filter="demo"></table>
+        <script type="text/html" id="barDemo">
+            <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+        </script>
+    </div>
+</div>
+
+</body>

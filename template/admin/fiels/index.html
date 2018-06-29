@@ -1,0 +1,28 @@
+{include file="common/header" /}
+
+{include file="common/memu" /}
+<script type="text/javascript" src="/static/js/admin/fiels.js"></script>
+<body>
+<div id="pageAll">
+    <div class="pageTop">
+        <div >
+            <img src="/static/index/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+                href="#">充值管理</a>&nbsp;-</span>&nbsp;文件列表
+        </div>
+    </div>
+
+    <div id="content" style="width: 100%;">
+        <blockquote class="layui-elem-quote" style="height: 20px;">
+
+        </blockquote>
+
+        <table id="fiels" lay-filter="fiels"></table>
+        <!-- balance 表格 显示 end-->
+
+        <script type="text/html" id="barFiels">
+            <a class="layui-btn layui-btn-xs" lay-event="down">下载</a>
+        </script>
+    </div>
+    <!-- balance页面样式end -->
+</div>
+

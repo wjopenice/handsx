@@ -1,0 +1,53 @@
+{include file="common/header" /}
+
+{include file="common/memu" /}
+
+<script type="text/javascript" src="/static/js/index/promote.js"></script>
+
+
+<script type="text/html" id="switchTpl">
+    <!-- 这里的 checked 的状态只是演示 -->
+    <input type="checkbox" name="status" id="status" data-id="{{d.id}}" value="{{d.status}}" lay-skin="switch" lay-text="正常|禁用" lay-filter="status" {{ d.status == 1 ? 'checked' : '' }}>
+</script>
+<body>
+<div id="pageAll">
+    <div class="pageTop">
+        <div >
+            <img src="/static/index/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+                href="#">商户管理</a>&nbsp;-</span>&nbsp;商户列表
+        </div>
+    </div>
+
+    <div id="content" style="width: 100%;">
+        <blockquote class="layui-elem-quote" style="height: 30px;">
+            <form class="layui-form" style="float:right;width:100%">
+                <button lay-filter="addpro" class="layui-btn" lay-submit><i class="fa fa-search" aria-hidden="true"></i> 添加</button>
+                <div class="layui-input-inline" style="margin:0;">
+                    <div class="layui-input-inline">
+                        <input type="text" name="account" placeholder="请输入商户号" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-input-inline" style="margin:0;">
+                    <div class="layui-input-inline">
+                        <input type="text" name="nickname" placeholder="请输入商户名称" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+
+                <div class="layui-input-inline" style="margin:0;">
+                    <div class="layui-form-mid layui-word-aux" style="padding:0 !important;float:right;">
+                        <button lay-filter="search" class="layui-btn" lay-submit><i class="fa fa-search" aria-hidden="true"></i> 查询</button>
+                    </div>
+                </div>
+            </form>
+        </blockquote>
+        <table id="promote" lay-filter="promote"></table>
+        <!-- balance 表格 显示 end-->
+
+        <script type="text/html" id="pro">
+            <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+            <a class="layui-btn layui-btn-xs" lay-event="details">详情</a>
+        </script>
+    </div>
+    <!-- balance页面样式end -->
+</div>
+</body>

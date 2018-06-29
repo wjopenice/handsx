@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="/static/index/css/public.css" />
+    <link rel="stylesheet" type="text/css" href="/static/layui-2.2.5/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="/static/index/css/css.css" />
+
+    <script type="text/javascript" src="/static/index/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/index/js/public.js"></script>
+    <script type="text/javascript" src="/static/layui-2.2.5/layui.js"></script>
+    <script type="text/javascript" src="/static/js/index/index.js"></script>
+    <script type="text/javascript" src="/static/js/index/commwith.js"></script>
+    <style>
+        /*   4.35重构    */
+        .topInfo{height:60px;font-size: 16px;line-height: 60px;}
+        .topInfo li{margin-left: 40px;}
+        .fl{float: left;}
+        .cf{clear: both;} .cf:after{zoom: 1;}
+        .noSome{height: 100px;line-height: 100px;text-align: center;font-size: 18px;color:#333;}
+    </style>
+</head>
+<body>
+
+<div style="margin-top: 20px;">
+    {if condition="$rec_all neq 0"}
+    <div>
+        <div>
+            <ul class="topInfo cf">
+                {if condition="$rec_all_data neq null"}
+                {foreach name="$rec_all_data" item="val"}
+                    <li class="fl">下游商户号&nbsp;&nbsp;:&nbsp;&nbsp;{$val.promote_account}</li>
+                    <li class="fl">充值金额&nbsp;&nbsp;:&nbsp;&nbsp;{$val.pay_amount}</li>
+                {/foreach}
+                {/if}
+            </ul>
+        </div>
+        <form class="layui-form" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">充值金额</label>
+                <div class="layui-input-inline" style="width: 30%">
+                    <input type="text" name="money" value="{$rec_all}" disabled lay-verify="required" placeholder="充值金额" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <!--<div class="layui-form-item">-->
+                <!--<label class="layui-form-label">下游提现费率</label>-->
+                <!--<div class="layui-input-inline" style="width: 30%">-->
+                    <!--<input type="text" name="down_rate"  value="" disabled lay-verify="required" placeholder="下游提现费率" autocomplete="off" class="layui-input">-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="layui-form-item">-->
+                <!--<label class="layui-form-label">佣金提现金额</label>-->
+                <!--<div class="layui-input-inline" style="width: 30%">-->
+                    <!--<input type="text" name="base_moeny"  value="" disabled lay-verify="required" placeholder="佣金提现金额" autocomplete="off" class="layui-input">-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="layui-form-item">
+                <label class="layui-form-label">佣金提现费率</label>
+                <div class="layui-input-inline" style="width: 30%">
+                    <input type="text" name="rate"  value="{$comm_revenue}" disabled lay-verify="required" placeholder="佣金提现费率" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">实际提现金额</label>
+                <div class="layui-input-inline" style="width: 30%">
+                    <input type="text" name="actual_money"  value="{$actual_with}" disabled lay-verify="required" placeholder="实际提现金额" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">收款银行卡：</label>
+                <div class="layui-input-block" style="width: 30%">
+                    <select name="bank_id" lay-verify="required" >
+                        <option value="">--请选择收款银行卡--</option>
+                        {volist name="bank_card" id="vo"}
+                        <option value="{$vo.bank_id}">{$vo.title} -- {$vo.bank_number}</option>
+                        {/volist}
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">提现密码：</label>
+                <div class="layui-input-block" style="width: 30%">
+                    <input type="password" style="width:90%" name="pay_pass" lay-verify="required" value="" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="commWith">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    {else /}
+        <p class="noSome">没有可提现的佣金</p>
+    {/if}
+</body>
+</html>

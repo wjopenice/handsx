@@ -1,0 +1,119 @@
+<body id="bg">
+<!-- 左边节点 -->
+<div class="container">
+
+    <div class="leftsidebar_box">
+        <a href="/index.html" style="display: block;"><div class="line">
+            <img src="/static/index/img/coin01.png" />&nbsp;&nbsp;首页
+        </div></a>
+        <!-- <dl class="system_log">
+        <dt><img class="icon1" src="/static/index/img/coin01.png" /><img class="icon2"src="/static/index/img/coin02.png" />
+            首页<img class="icon3" src="/static/index/img/coin19.png" /><img class="icon4" src="/static/index/img/coin20.png" /></dt>
+    </dl> -->
+        <dl class="system_log">
+            <dt>
+                <img class="icon1" src="/static/index/img/coin05.png" />
+                <img class="icon2" src="/static/index/img/coin06.png" /> 充值管理
+                <img class="icon3" src="/static/index/img/coin19.png" />
+                <img class="icon4" src="/static/index/img/coin20.png" />
+            </dt>
+            <dd>
+                <img class="coin11" src="/static/index/img/coin111.png" />
+                <img class="coin22" src="/static/index/img/coin222.png" />
+                <a class="cks" href="/recharge.html">充值记录</a>
+                <img class="icon5" src="/static/index/img/coin21.png" />
+            </dd>
+        </dl>
+        <dl class="system_log">
+            <dt>
+                <img class="icon1" src="/static/index/img/coin07.png" />
+                <img class="icon2" src="/static/index/img/coin08.png" /> 商户管理
+                <img class="icon3" src="/static/index/img/coin19.png" />
+                <img class="icon4" src="/static/index/img/coin20.png" />
+            </dt>
+            <dd>
+                <img class="coin11" src="/static/index/img/coin111.png" />
+                <img class="coin22" src="/static/index/img/coin222.png" />
+                <a href="/merchant.html" class="cks">商户信息</a>
+                <img class="icon5" src="/static/index/img/coin21.png" />
+            </dd>
+            <dd>
+                <img class="coin11" src="/static/index/img/coin111.png" />
+                <img class="coin22" src="/static/index/img/coin222.png" />
+                <a href="/bank.html" class="cks">银行信息</a>
+                <img class="icon5" src="/static/index/img/coin21.png" />
+            </dd>
+            <dd>
+                <img class="coin11" src="/static/index/img/coin111.png" />
+                <img class="coin22" src="/static/index/img/coin222.png" />
+                <a href="/recommend.html" class="cks">推荐列表</a>
+                <img class="icon4" src="/static/index/img/coin21.png" />
+            </dd>
+            <dd>
+                <img class="coin11" src="/static/index/img/coin111.png" />
+                <img class="coin22" src="/static/index/img/coin222.png" />
+                <a href="/downstream.html" class="cks">下游充值</a>
+                <img class="icon4" src="/static/index/img/coin21.png" />
+            </dd>
+        </dl>
+        <dl class="system_log">
+            <dt>
+                <img class="icon1" src="/static/index/img/coin18.png" />
+                <img class="icon2" src="/static/index/img/coin17.png" /> 提现管理
+                <img class="icon3" src="/static/index/img/coin19.png" />
+                <img class="icon4" src="/static/index/img/coin20.png" />
+            </dt>
+            
+            {if condition="$is_to"}
+            <dd>
+                <img class="coin11" src="/static/index/img/coin111.png" />
+                <img class="coin22" src="/static/index/img/coin222.png" />
+                <a href="/withdraw.html" class="cks">扫码提现记录</a>
+                <img class="icon5" src="/static/index/img/coin21.png" />
+            </dd>
+            <dd>
+                <img class="coin11" src="/static/index/img/coin111.png" />
+                <img class="coin22" src="/static/index/img/coin222.png" />
+                <a href="/todaywith.html" class="cks">T0提现记录</a>
+                <img class="icon5" src="/static/index/img/coin21.png" />
+            </dd>
+            {else /}
+            <dd>
+                <img class="coin11" src="/static/index/img/coin111.png" />
+                <img class="coin22" src="/static/index/img/coin222.png" />
+                <a href="/withdraw.html" class="cks">提现记录</a>
+                <img class="icon5" src="/static/index/img/coin21.png" />
+            </dd>
+            {/if}
+            <dd>
+                <img class="coin11" src="/static/index/img/coin111.png" />
+                <img class="coin22" src="/static/index/img/coin222.png" />
+                <a href="/wetchwith.html" class="cks">H5微信提现记录</a>
+                <img class="icon5" src="/static/index/img/coin21.png" />
+            </dd>
+            <dd>
+                <img class="coin11" src="/static/index/img/coin111.png" />
+                <img class="coin22" src="/static/index/img/coin222.png" />
+                <a href="/alipaywith.html" class="cks">H5支付宝提现记录</a>
+                <img class="icon5" src="/static/index/img/coin21.png" />
+            </dd>
+            <dd>
+                <img class="coin11" src="/static/index/img/coin111.png" />
+                <img class="coin22" src="/static/index/img/coin222.png" />
+                <a href="/profit.html" class="cks">佣金提现</a>
+                <img class="icon5" src="/static/index/img/coin21.png" />
+            </dd>
+            {if condition="$is_sub"}
+            <dd>
+                <img class="coin11" src="/static/index/img/coin111.png" />
+                <img class="coin22" src="/static/index/img/coin222.png" />
+                <a href="/substitute.html" class="cks">代付提现记录</a>
+                <img class="icon5" src="/static/index/img/coin21.png" />
+            </dd>
+            {/if}
+        </dl>
+    </div>
+
+</div>
+</body>
+</html>

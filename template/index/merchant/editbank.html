@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>修改银行卡信息</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="/static/index/css/public.css" />
+    <link rel="stylesheet" type="text/css" href="/static/layui-2.2.5/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="/static/index/css/css.css" />
+
+    <script type="text/javascript" src="/static/index/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/index/js/public.js"></script>
+    <script type="text/javascript" src="/static/layui-2.2.5/layui.js"></script>
+    <script type="text/javascript" src="/static/js/index/index.js"></script>
+    <script type="text/javascript" src="/static/js/index/bank.js"></script>
+    <script src="/static/tpsld/selectjs/jquery.easydropdown.js"></script>
+</head>
+<body>
+
+<div style="margin-top: 20px;">
+    <div>
+        <form class="layui-form" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">请选择银行</label>
+                <div class="layui-input-inline">
+                    <select name="bank_name" lay-verify="required">
+                        <option value=""></option>
+                        {foreach name="bank" key="key" item="val"}
+                            <option value="{$key}" {if condition="$data.bank_name eq $key"} selected {/if}>{$val}</option>
+                        {/foreach}
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">银行卡号</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="bank_number" value="{$data.bank_number}" lay-verify="required" placeholder="银行卡号" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">持卡人姓名</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="bank_user"  value="{$data.bank_user}" lay-verify="required" placeholder="持卡人姓名" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">选择地区</label>
+                <div class="layui-input-inline">
+                    <select name="province" lay-filter="ld-select" lay-verify="required">
+                        <option value="-1" selected>省份/直辖市</option>
+                        {foreach name="province" item="one"}
+                        <option value="{$one.area_id}" {if condition="$region.province.1 eq $one.area_id"} selected {/if}  >{$one.area_name}</option>
+                        {/foreach}
+                    </select>
+                </div>
+                <div class="layui-input-inline">
+                    <select name="city" id="city"  lay-filter="city-select" lay-verify="required">
+                        <option value="{$region.city.1}">{$region.city.2}</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline">
+                    <select name="district" id="district" lay-verify="required">
+                        <option value="{$region.district.1}">{$region.district.2}</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">开户支行</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="sub_branch" value="{$data.sub_branch}" lay-verify="required" placeholder="开户支行" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">银行预留手机</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="bank_phone" value="{$data.bank_phone}" lay-verify="required" placeholder="银行预留手机" autocomplete="off" class="layui-input">
+                    <input type="hidden" name="bank_id" value="{$data.bank_id}">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="editBank">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

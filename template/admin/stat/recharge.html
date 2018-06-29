@@ -1,0 +1,84 @@
+{include file="common/header" /}
+
+{include file="common/memu" /}
+<link rel="stylesheet" href="../../../static/admin/css/recharge.css">
+<style>
+    #all_main{float:left;width: 600px;height: 400px;}
+    #week_all{float:left;width: 900px;height: 400px;margin-left: 20px;}
+    .cf{clear: both;}
+    .cf:after{zoom:1;}
+
+</style>
+<body>
+<div id="pageAll">
+    <div class="pageTop">
+        <div >
+            <img src="/static/index/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+                href="#">数据统计</a>&nbsp;-</span>&nbsp;充值统计
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="content">
+        <!-- 总充值 -->
+        <div class="totalRecharge">
+            <h1 class="layui-elem-quote">总充值</h1>
+
+            <!-- 充值金额 -->
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">总充值金额：</label>
+                    <div class="layui-input-block">
+                        {$all_data}元
+                    </div>
+                </div>
+                {foreach name="$class" item="val"}
+                <div class="layui-inline">
+                    <label class="layui-form-label">{$val.type_name}充值金额：</label>
+                    <div class="layui-input-block">
+                        {$val.pay_amount}元
+                    </div>
+                </div>
+                {/foreach}
+            </div>
+
+            <!-- 总充值折线图 -->
+            {include file="stat/all_rec" /}
+            {include file="stat/week_all" /}
+        </div>
+
+        <!-- 当日充值 -->
+        <div class="totalRecharge cf">
+            <h1 class="layui-elem-quote">当日充值</h1>
+
+            <!-- 充值金额 -->
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">充值金额：</label>
+                    <div class="layui-input-block">
+                        {$today_data}元
+                    </div>
+                </div>
+                {foreach name="$today_class" item="v"}
+                <div class="layui-inline">
+                    <label class="layui-form-label">{$v.type_name}充值金额：</label>
+                    <div class="layui-input-block">
+                        {$v.pay_amount}元
+                    </div>
+                </div>
+                {/foreach}
+            </div>
+
+            <!-- 当日充值折线图 -->
+            {include file="stat/today_rec" /}
+            <div id="today_main" style="width: 600px;height:400px;"></div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+</body>

@@ -1,0 +1,32 @@
+{include file="common/header" /}
+
+{include file="common/memu" /}
+
+
+<script type="text/javascript" src="/static/js/admin/juris.js"></script>
+<body>
+<div id="pageAll">
+    <div class="pageTop">
+        <div >
+            <img src="/static/index/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+                href="#">权限管理</a>&nbsp;-</span>&nbsp;权限列表
+        </div>
+    </div>
+
+    <div id="content" style="width: 100%;">
+        <blockquote class="layui-elem-quote" style="height: 30px;">
+            <button lay-filter="addJuris" class="layui-btn" lay-submit><i class="fa fa-search" aria-hidden="true"></i> 新增权限</button>
+        </blockquote>
+
+        <table id="juris" lay-filter="jurisDemo"></table>
+        <!-- balance 表格 显示 end-->
+
+        <script type="text/html" id="jurisDemo">
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        </script>
+    </div>
+    <!-- balance页面样式end -->
+</div>
+
+</body>

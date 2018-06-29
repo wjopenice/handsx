@@ -1,0 +1,30 @@
+{include file="common/header" /}
+
+{include file="common/memu" /}
+
+<script type="text/javascript" src="/static/js/admin/notice.js"></script>
+<body>
+<div id="pageAll">
+    <div class="pageTop">
+        <div >
+            <img src="/static/index/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+                href="#">公告管理</a>&nbsp;-</span>&nbsp;公告列表
+        </div>
+    </div>
+
+    <div id="content" style="width: 100%;">
+        <blockquote class="layui-elem-quote" style="height: 30px;">
+            <a lay-filter="addNotice" href="/admin/notice/add.html" class="layui-btn" lay-submit><i class="fa fa-search" aria-hidden="true"></i> 新增公告</a>
+        </blockquote>
+
+        <table id="notice" lay-filter="noticeDemo"></table>
+        <!-- balance 表格 显示 end-->
+
+        <script type="text/html" id="noticeDemo">
+            <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+            <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        </script>
+    </div>
+</div>
+
+</body>

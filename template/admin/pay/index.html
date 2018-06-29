@@ -1,0 +1,58 @@
+{include file="common/header" /}
+
+{include file="common/memu" /}
+
+<script type="text/javascript" src="/static/js/admin/payine.js"></script>
+
+<script type="text/html" id="payIneTpl">
+    <!-- 这里的 checked 的状态只是演示 -->
+    <input type="checkbox" name="status" id="status" data-id="{{d.id}}" value="{{d.status}}" lay-skin="switch" lay-text="启用|禁用" lay-filter="status" {{ d.status == 1 ? 'checked' : '' }}>
+</script>
+<script type="text/html" id="wetchStatus">
+    <!-- 这里的 checked 的状态只是演示 -->
+    <input type="checkbox" name="wetch_status" id="wetch_status" data-id="{{d.id}}" value="{{d.wetch_status}}" lay-skin="switch" lay-text="启用|禁用" lay-filter="wetch_status" {{ d.wetch_status == 1 ? 'checked' : '' }}>
+</script>
+<script type="text/html" id="alipayStatus">
+    <!-- 这里的 checked 的状态只是演示 -->
+    <input type="checkbox" name="alipay_status" id="alipay_status" data-id="{{d.id}}" value="{{d.alipay_status}}" lay-skin="switch" lay-text="启用|禁用" lay-filter="alipay_status" {{ d.alipay_status == 1 ? 'checked' : '' }}>
+</script>
+
+<script type="text/html" id="h5_wetchStatus">
+    <!-- 这里的 checked 的状态只是演示 -->
+    <input type="checkbox" name="h5_wetch_status" id="h5_wetch_status" data-id="{{d.id}}" value="{{d.h5_wetch_status}}" lay-skin="switch" lay-text="启用|禁用" lay-filter="h5_wetch_status" {{ d.h5_wetch_status == 1 ? 'checked' : '' }}>
+</script>
+<script type="text/html" id="h5_alipayStatus">
+    <!-- 这里的 checked 的状态只是演示 -->
+    <input type="checkbox" name="h5_alipay_status" id="h5_alipay_status" data-id="{{d.id}}" value="{{d.h5_alipay_status}}" lay-skin="switch" lay-text="启用|禁用" lay-filter="h5_alipay_status" {{ d.h5_alipay_status == 1 ? 'checked' : '' }}>
+</script>
+
+<body>
+<div id="pageAll">
+    <div class="pageTop">
+        <div >
+            <img src="/static/index/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+                href="#">接口管理</a>&nbsp;-</span>&nbsp;接口列表
+        </div>
+    </div>
+
+    <div id="content" style="width: 100%;">
+        <blockquote class="layui-elem-quote" style="height: 30px;">
+            <form class="layui-form" style="float:right;width:100%">
+                <div class="layui-word-aux">
+                    <button lay-filter="add" class="layui-btn" lay-submit><i class="fa fa-search" aria-hidden="true"></i> 添加</button>
+                </div>
+            </form>
+        </blockquote>
+
+        <table id="payine" lay-filter="payine"></table>
+        <!-- balance 表格 显示 end-->
+
+        <script type="text/html" id="ineDemo">
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        </script>
+    </div>
+    <!-- balance页面样式end -->
+</div>
+
+</body>

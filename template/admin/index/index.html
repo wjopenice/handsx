@@ -1,0 +1,113 @@
+{include file="common/header" /}
+
+{include file="common/memu" /}
+
+<link rel="stylesheet" href="../../../static/admin/css/common.css">
+<link rel="stylesheet" href="../../../static/admin/css/index.css">
+<script type="text/javascript" src="/static/js/admin/defoult.js"></script>
+
+<body style="background: #F1F2F7;">
+<div id="pageAll" style="width: 90%;">
+    <div class="page">
+        <!-- main页面样式 -->
+        <div class="rowBox flex">
+            <div class="subRow flexbox">
+                <h1 class="rowNum">{$data.all_data ? : '0.00'}</h1>
+                <p class="rowCon">平台总充值额</p>
+            </div>
+            <div class="subRow flexbox">
+                <h1 class="rowNum">{$data.all_with ? : '0.00'}</h1>
+                <p class="rowCon">平台总提现额</p>
+            </div>
+            <div class="subRow flexbox">
+                <h1 class="rowNum">{$data.all_sett ? : '0.00'}</h1>
+                <p class="rowCon">平台结算额</p>
+            </div>
+            <div class="subRow flexbox">
+                <h1 class="rowNum">{$data.all_pro_counts}</h1>
+                <p class="rowCon">商户数</p>
+            </div>
+
+        </div>
+        <div class="mainCenterBox cf">
+            <div class="leftBox fl cf">
+                <div class="websiteBox fl">
+                    <div class="mainTit">平台基本信息</div>
+                    <div class="mainCon cf">
+                        <div class="subWebSiteInfo fl"><strong>当前充值订单总数：</strong><span>{$data.all_orders ? : 0}</span><span> 单</span></div>
+                        <div class="subWebSiteInfo fl"><strong>当前充值订单总数（成功）：</strong><span>{$data.all_success_orders ? : 0}</span><span> 单</span></div>
+                        <div class="subWebSiteInfo fl"><strong>当前充值订单总数（失败）：</strong><span>{$data.all_fail_orders ? : 0}</span><span> 单</span></div>
+
+                        <div class="subWebSiteInfo fl"><strong>当前充值订单总额：</strong><span>{$data.all_orders_money ? : '0.00'}</span><span> 元</span></div>
+                        <div class="subWebSiteInfo fl"><strong>当前充值订单总额（成功）：</strong><span>{$data.all_success_money ? : '0.00'}</span><span> 元</span></div>
+                        <div class="subWebSiteInfo fl"><strong>当前充值订单总额（失败）：</strong><span>{$data.all_fail_money ? : '0.00'}</span><span> 元</span></div>
+
+                        <div class="subWebSiteInfo fl"><strong>今日充值订单总数：</strong><span>{$data.today_orders ? : 0}</span><span> 单</span></div>
+                        <div class="subWebSiteInfo fl"><strong>今日充值订单总数（成功）：</strong><span>{$data.today_success_orders ? : 0}</span><span> 单</span></div>
+                        <div class="subWebSiteInfo fl"><strong>今日充值订单总数（失败）：</strong><span>{$data.today_fail_orders ? : 0}</span><span> 单</span></div>
+
+                        <div class="subWebSiteInfo fl"><strong>今日充值订单总额：</strong><span>{$data.today_orders_money ? : '0.00'}</span><span> 元</span></div>
+                        <div class="subWebSiteInfo fl"><strong>今日充值订单总额（成功）：</strong><span>{$data.today_success_money ? : '0.00'}</span><span> 元</span></div>
+                        <div class="subWebSiteInfo fl"><strong>今日充值订单总额（失败）：</strong><span>{$data.today_fail_money ? : '0.00'}</span><span> 元</span></div>
+
+                        <div class="subWebSiteInfo fl"><strong>当前提现记录数：</strong><span>{$data.with_strip ? : 0}</span><span> 条</span></div>
+                        <div class="subWebSiteInfo fl"><strong>当前已提现总额：</strong><span>{$data.with_money ? : '0.00'}</span><span> 元</span></div>
+                        <div class="subWebSiteInfo fl"><strong>当前可提现总额：</strong><span>{$data.with_not ? : '0.00'}</span><span> 元</span></div>
+
+                        <div class="subWebSiteInfo fl"><strong>今日提现记录数：</strong><span>{$data.today_with_strip ? : 0}</span><span> 条</span></div>
+                        <div class="subWebSiteInfo fl"><strong>今日提现总额：</strong><span>{$data.today_with_money ? : '0.00'}</span><span> 元</span></div>
+
+                        <div class="subWebSiteInfo fl"><strong>已结算总额：</strong><span>{$data.all_sett ? : '0.00'}</span><span> 元</span></div>
+                        <div class="subWebSiteInfo fl"><strong>未结算总额：</strong><span>{$data.not_sett ? : '0.00'}</span><span> 元</span></div>
+                    </div>
+                </div>
+                <div class="newestInfoBox fl">
+                    <div class="mainTit">最新通告</div>
+                    <div class="mainCon cf" id="newestInfoContent">
+                        <ul>
+                            {if condition="$notice neq null"}
+                            {foreach name="$notice" item="val"}
+                            <li class="subNewestInfo" data-id="{$val.id}">{$val.title}</li>
+                            {/foreach}
+                            {/if}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rightBox fl cf">
+                {if condition="$account.grade eq 1 "}
+                <div class="quickOperation fl">
+                    <div class="mainTit">快捷操作</div>
+                    <div class="mainCon">
+                        <div class="operationLine cf">
+                            {foreach name="$quick" item="val"}
+                            <a class="operateLink fl cf" href="{$val.url}"><p class="fl">{$val.title}</p></a>
+                            {/foreach}
+                        </div>
+                    </div>
+                </div>
+                {/if}
+                <div class="loginRecord fl">
+                    <div class="mainTit">管理员登录记录</div>
+                    <div class="mainCon">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            {if condition="$logs neq null"}
+                            {foreach name="$logs" item="val"}
+                            <tr>
+                                <td>{$val.account}</td>
+                                <td>{$val.time}</td>
+                                <td>{$val.login_ip}</td>
+                            </tr>
+                            {/foreach}
+                            {/if}
+                        </table>
+                    </div>
+                </div>
+                <!--<div class="heightHartsBox fl"></div>-->
+            </div>
+        </div>
+        <!-- main页面样式end -->
+    </div>
+</div>
+<script src="../../../static/admin/js/jquery.js"></script>
+</body>

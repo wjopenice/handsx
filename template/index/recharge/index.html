@@ -1,0 +1,115 @@
+{include file="common/header" /}
+
+{include file="common/memu" /}
+
+<script type="text/javascript" src="/static/js/index/recharge.js"></script>
+<script type="text/html" id="statusTpl">
+    {{#  if(d.pay_status === '支付成功'){ }}
+    <span style="color: #2ca02c;">{{ d.pay_status }}</span>
+    {{#  } else { }}
+    <span style="color: #ff5400;">{{ d.pay_status }}</span>
+    {{#  } }}
+</script>
+<body>
+<div id="pageAll">
+    <div class="pageTop">
+        <div >
+            <img src="/static/index/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+                href="#">充值管理</a>&nbsp;-</span>&nbsp;充值记录
+        </div>
+    </div>
+
+    <div id="content" style="width: 100%;">
+        <blockquote class="layui-elem-quote" style="height: 70px;">
+            <div>
+            <span class="layui-badge">当前可提现金额：{$money}</span>
+            <span class="layui-badge layui-bg-green">当前总充值金额：{$total_money}</span>
+            <span class="layui-badge layui-bg-cyan">今日总充值金额：{$recharge}</span>
+            <span class="layui-badge layui-bg-blue">今日提现总金额：{$with}</span>
+            <span class="layui-badge layui-bg-orange" id="all_pay" style="display: none"></span>
+            </div>
+            <div>
+                <span class="layui-badge">订单总数：{$all_count}</span>
+                <span class="layui-badge layui-bg-green">订单总额：{$sum_money}</span>
+                <span class="layui-badge layui-bg-cyan">成功订单数：{$success_count}</span>
+                <span class="layui-badge layui-bg-blue">成功订单总额：{$success_money}</span>
+                <span class="layui-badge layui-bg-cyan">失败订单数：{$error_count}</span>
+                <span class="layui-badge layui-bg-blue">失败订单总额：{$error_money}</span>
+            </div>
+            <form class="layui-form" style="float:right;width:100%">
+                <!--<div class="layui-input-inline" style="margin:0;">-->
+                    <!--<div class="layui-input-inline">-->
+                        <!--<input type="text" name="exchange" placeholder="请输入商户号" autocomplete="off" class="layui-input">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="layui-input-inline">
+                    <input class="layui-input" name="start_time" placeholder="开始日" id="start_time">
+                </div>
+                <div class="layui-input-inline">
+                    <input class="layui-input" name="first_time" placeholder="截止日" id="first_time">
+                </div>
+                <div class="layui-input-inline" style="margin:0;">
+                    <div class="layui-input-inline">
+                        <input type="text" name="order_number" placeholder="请输入订单号" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-input-inline" style="margin:0;">
+                    <div class="layui-input-inline">
+                        <input type="text" name="pay_order_number" placeholder="请输入支付订单号" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-input-inline" style="margin:0;">
+                    <div class="layui-input-inline">
+                        <div class="layui-input-block" style="margin-left:0">
+                            <select name="pay_status" lay-filter="aihao">
+                                <option value="2" selected>请选择充值状态</option>
+                                <option value="1">充值成功</option>
+                                <option value="0">充值失败</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-input-inline" style="margin:0;">
+                    <div class="layui-input-inline">
+                        <div class="layui-input-block" style="margin-left:0">
+                            <select name="status" lay-filter="aihao">
+                                <option value="2" selected>请选择结算状态</option>
+                                <option value="0">未结算</option>
+                                <option value="1">已结算</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-input-inline">
+                    <div class="layui-input-block" style="margin-left:0">
+                        <select name="pay_way" lay-filter="aihao">
+                            <option value="0" selected>请选择支付方式</option>
+                            <option value="1">支付宝</option>
+                            <option value="2">微信</option>
+                            <option value="4">H5微信</option>
+                            <option value="5">H5支付宝</option>
+                            <option value="3">网银</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-input-inline" style="margin:0;">
+                    <div class="layui-form-mid layui-word-aux" style="padding:0 !important;float:right;">
+                        <button lay-filter="search" class="layui-btn" lay-submit><i class="fa fa-search" aria-hidden="true"></i> 查询</button>
+                        <button lay-filter="export" class="layui-btn" lay-submit><i class="fa fa-search" aria-hidden="true"></i> 导出</button>
+                    </div>
+                </div>
+            </form>
+        </blockquote>
+
+        <table id="test" lay-filter="test"></table>
+        <!-- balance 表格 显示 end-->
+
+        <script type="text/html" id="barDemo">
+            <a class="layui-btn layui-btn-xs" lay-event="inquiry">订单结果查询</a>
+        </script>
+    </div>
+        <!-- balance页面样式end -->
+</div>
+
+</body>

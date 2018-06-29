@@ -1,0 +1,45 @@
+{include file="common/header" /}
+
+{include file="common/memu" /}
+
+<script type="text/javascript" src="/static/js/index/recommend.js"></script>
+
+<body>
+<div id="pageAll">
+    <div class="pageTop">
+        <div >
+            <img src="/static/index/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+                href="#">商户管理</a>&nbsp;-</span>&nbsp;推荐列表
+        </div>
+    </div>
+    <div id="content" style="width: 100%;">
+        <blockquote class="layui-elem-quote" style="height: 30px;">
+            <form class="layui-form" style="float:right;width:100%">
+
+                <div class="layui-inline">
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input" name="account" id="account" placeholder="商户号">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input" name="nickname" id="nickname" placeholder="商户名">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input" name="mobile_phone" id="mobile_phone" placeholder="手机号">
+                    </div>
+                </div>
+                <div class="layui-input-inline" style="margin:0;">
+                    <div class="layui-form-mid layui-word-aux" style="padding:0 !important;float:right;">
+                        <button lay-filter="search" class="layui-btn" lay-submit><i class="fa fa-search" aria-hidden="true"></i> 查询</button>
+                    </div>
+                </div>
+            </form>
+        </blockquote>
+        <table id="test" lay-filter="demo"></table>
+    </div>
+</div>
+
+</body>

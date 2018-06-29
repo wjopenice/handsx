@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="/static/index/css/public.css" />
+    <link rel="stylesheet" type="text/css" href="/static/layui-2.2.5/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="/static/index/css/css.css" />
+
+    <script type="text/javascript" src="/static/index/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/index/js/public.js"></script>
+    <script type="text/javascript" src="/static/layui-2.2.5/layui.js"></script>
+    <script type="text/javascript" src="/static/js/admin/admin.js"></script>
+    <script type="text/javascript" src="/static/js/admin/payine.js"></script>
+</head>
+<body>
+
+<div style="margin-top: 20px;">
+    <div>
+        <form class="layui-form" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">接入方</label>
+                <div class="layui-input-inline" style="width: 30%">
+                    <select name="pay_type" lay-verify="required">
+                        <option value="1" {if condition="$data.pay_type eq 1"} selected {/if} >通联</option>
+                        <option value="2" {if condition="$data.pay_type eq 2"} selected {/if} >环迅</option>
+                        <option value="3" {if condition="$data.pay_type eq 3"} selected {/if} >千玺</option>
+                        <option value="4" {if condition="$data.pay_type eq 4"} selected {/if} >爱加密</option>
+                        <option value="5" {if condition="$data.pay_type eq 5"} selected {/if} >点缀</option>
+                        <option value="6" {if condition="$data.pay_type eq 6"} selected {/if} >兴业</option>
+                        <option value="7" {if condition="$data.pay_type eq 7"} selected {/if} >聚森</option>
+                        <option value="8" {if condition="$data.pay_type eq 8"} selected {/if} >快接</option>
+                        <option value="9" {if condition="$data.pay_type eq 9"} selected {/if} >兆行</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">接口名称</label>
+                <div class="layui-input-inline" style="width: 30%">
+                    <input type="text" name="pay_title" value="{$data.pay_title}" lay-verify="required" placeholder="接口名称" autocomplete="off" class="layui-input">
+                    <input type="hidden" name="id" value="{$data.id}">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">接口商户号</label>
+                <div class="layui-input-inline" style="width: 30%">
+                    <input type="text" name="pay_number"  value="{$data.pay_number}" placeholder="接口商户号" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">接口APPID</label>
+                <div class="layui-input-inline" style="width: 30%">
+                    <input type="text" name="pay_appid"  value="{$data.pay_appid}" lay-verify="required" placeholder="接口APPID" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">接口CUSID</label>
+                <div class="layui-input-inline" style="width: 30%">
+                    <input type="text" name="pay_cusid"  value="{$data.pay_cusid}" placeholder="接口CUSID" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">接口APPKEY</label>
+                <div class="layui-input-inline" style="width: 50%">
+                    <input type="text" name="pay_appkey"  value="{$data.pay_appkey}" lay-verify="required" placeholder="接口APPKEY" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">支付URL</label>
+                <div class="layui-input-inline" style="width: 50%">
+                    <input type="text" name="url"  value="{$data.url}" placeholder="支付URL" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">是否启用</label>
+                <div class="layui-input-block">
+                    <input name="status" value="1" title="启用" {if condition="$data.status eq 1"} checked {/if} type="radio">
+                    <input name="status" value="2" title="禁用" {if condition="$data.status eq 2"} checked {/if} type="radio">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="editIne">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
