@@ -1,0 +1,5 @@
+.content{margin: 0 .8rem;overflow-x: hidden;}
+.orderTodayWrap{margin: 0;}
+.blockName{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.recharge-top p{width: 20%;font-size: .6rem;margin:-1px -1px 0 0;text-align: center;padding: .6rem 0;border: 1px solid #ccc;background: #fff;}
+.recharge-bottom p{width: 20%;font-size: .6rem;margin:-1px -1px 0 0;text-align: center;padding: .6rem 0;border: 1px solid #ccc;background: #fff;}

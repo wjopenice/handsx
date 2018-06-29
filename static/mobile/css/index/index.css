@@ -1,0 +1,15 @@
+/*   首页内容   */
+.navConWrap{margin: 1rem 0 0 5%;}
+.subNav{width:44.8%;margin:0 5% 1rem 0;padding-bottom:.8rem;background: #FFF;}
+.subNav .navIcon{display:block;width: 100%;height: 4rem;}
+.topBar1{box-shadow:1px 1px 5px #F4E8CD;}
+.topBar2{box-shadow:1px 1px 5px #E7F0E4;}
+.topBar3{box-shadow:1px 1px 5px #F1E4E5;}
+.topBar4{box-shadow:1px 1px 5px #DCE8F0;}
+.topBar1 .navIcon{background: url(../../image/index/welcome/topBarIcon1.png) no-repeat center center;background-size: 2.5rem 2.5rem;}
+.topBar2 .navIcon{background: url(../../image/index/welcome/topBarIcon2.png) no-repeat center center;background-size: 2.5rem 2.5rem;}
+.topBar3 .navIcon{background: url(../../image/index/welcome/topBarIcon3.png) no-repeat center center;background-size: 2.5rem 2.5rem;}
+.topBar4 .navIcon{background: url(../../image/index/welcome/topBarIcon4.png) no-repeat center center;background-size: 2.5rem 2.5rem;}
+.subNav .navNum{height: 1rem;line-height: 1rem;text-align: center;font-size: 1rem;font-weight:700;color: #333;}
+.subNav .navName{height: 1rem;line-height: 1rem;text-align: center;font-size: .5rem;color: #666;}
+
