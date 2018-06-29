@@ -1,0 +1,3345 @@
+---------------------------------------------------------------
+[ 2018-03-14T15:16:30+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.hands.com/ [运行时间：0.078000s][吞吐率：12.82req/s] [内存消耗：768.65kb] [文件加载：53]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\www\hands\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\index/index.html [ array (
+  0 => 'user_data',
+  1 => 'cart_count',
+  2 => 'dePro',
+  3 => 'goods_menu',
+  4 => 'key_word',
+  5 => 'class',
+  6 => 'search',
+  7 => 'gift',
+  8 => 'goods_class',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_nav_class` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_nav_class` WHERE  (  pid=0 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_nav_class` WHERE  (  pid=57 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_nav_class` WHERE  (  pid=59 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_goods_class` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_goods_class` WHERE  (  `pid`=0 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_goods_class` WHERE  (  `pid`=1 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_goods_class` WHERE  (  `pid`=6 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_goods_class` WHERE  (  `pid`=7 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_goods_class` WHERE  (  `pid`=16 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_goods_class` WHERE  (  `pid`=24 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_goods_class` WHERE  (  `pid`=31 ) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_goods_class` WHERE  (  `pid`=47 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_nav_class` WHERE  (  `pid`=29 ) ORDER BY `cid` asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_apply_gift_config` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_apply_gift_config` WHERE  (  `status`=1 ) ORDER BY ctime desc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_goods_class` WHERE  (  is_show = 1 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_goods` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`commodity`,`price`,`description`,`privilege_price`,`cover_picture` FROM `tab_goods` WHERE  (  sc_id=30 and `status` = 1 ) ORDER BY goods_id desc LIMIT 0,7 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`commodity`,`price`,`description`,`privilege_price`,`cover_picture` FROM `tab_goods` WHERE  (  sc_id=33 and `status` = 1 ) ORDER BY goods_id desc LIMIT 0,7 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`commodity`,`price`,`description`,`privilege_price`,`cover_picture` FROM `tab_goods` WHERE  (  sc_id=42 and `status` = 1 ) ORDER BY goods_id desc LIMIT 0,7 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`commodity`,`price`,`description`,`privilege_price`,`cover_picture` FROM `tab_goods` WHERE  (  sc_id=50 and `status` = 1 ) ORDER BY goods_id desc LIMIT 0,7 [ RunTime:0.000000s ]
+[ error ] [0]模板文件不存在:F:/www/hands/template/index\common/header.html[F:\www\hands\thinkphp\library\think\Template.php:259]
+---------------------------------------------------------------
+[ 2018-03-14T15:19:36+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.hands.com/ [运行时间：0.021000s][吞吐率：47.62req/s] [内存消耗：605.20kb] [文件加载：46]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:19:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.013000s][吞吐率：76.92req/s] [内存消耗：592.09kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:20:50+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.025000s][吞吐率：40.00req/s] [内存消耗：743.55kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:20:58+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.033000s][吞吐率：30.30req/s] [内存消耗：743.53kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:F:/www/hands/template/index\login/login.html[F:\www\hands\thinkphp\library\think\view\driver\Think.php:121]
+---------------------------------------------------------------
+[ 2018-03-14T15:21:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.037000s][吞吐率：27.03req/s] [内存消耗：617.52kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:21:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/js/public.js
+[ info ] www.hands.com/index/login/js/public.js [运行时间：0.010000s][吞吐率：100.00req/s] [内存消耗：592.46kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'public.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:21:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/js/jquery.min.js
+[ info ] www.hands.com/index/login/js/jquery.min.js [运行时间：0.011000s][吞吐率：90.91req/s] [内存消耗：592.49kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'jquery.min.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:21:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/css/public.css
+[ info ] www.hands.com/index/login/css/public.css [运行时间：0.013000s][吞吐率：76.92req/s] [内存消耗：592.63kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'public.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:21:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/css/page.css
+[ info ] www.hands.com/index/login/css/page.css [运行时间：0.019000s][吞吐率：52.63req/s] [内存消耗：592.60kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'page.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:21:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logLOGO.png
+[ info ] www.hands.com/index/login/img/logLOGO.png [运行时间：0.010000s][吞吐率：100.00req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logLOGO.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:21:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/js/public.js
+[ info ] www.hands.com/index/login/js/public.js [运行时间：0.010000s][吞吐率：100.00req/s] [内存消耗：592.46kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'public.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:21:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logBanner.png
+[ info ] www.hands.com/index/login/img/logBanner.png [运行时间：0.011000s][吞吐率：90.91req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logBanner.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:21:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logName.png
+[ info ] www.hands.com/index/login/img/logName.png [运行时间：0.010000s][吞吐率：100.00req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logName.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:21:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logYZM.png
+[ info ] www.hands.com/index/login/img/logYZM.png [运行时间：0.011000s][吞吐率：90.91req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logYZM.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:21:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logPwd.png
+[ info ] www.hands.com/index/login/img/logPwd.png [运行时间：0.015000s][吞吐率：66.67req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logPwd.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:23:53+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.014000s][吞吐率：71.43req/s] [内存消耗：39.77kb] [文件加载：22]
+[ error ] [8]Use of undefined constant __ROOT__ - assumed '__ROOT__'[F:\www\hands\configs\config.php:29]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:28:18+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.007000s][吞吐率：142.86req/s] [内存消耗：40.13kb] [文件加载：22]
+[ error ] [8]Use of undefined constant __ROOT__ - assumed '__ROOT__'[F:\www\hands\configs\config.php:30]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:28:26+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.009000s][吞吐率：111.11req/s] [内存消耗：41.15kb] [文件加载：22]
+[ error ] [8]Use of undefined constant MODULE_NAME - assumed 'MODULE_NAME'[F:\www\hands\configs\config.php:30]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.018000s][吞吐率：55.56req/s] [内存消耗：616.80kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/js/public.js
+[ info ] www.hands.com/index/login/js/public.js [运行时间：0.009000s][吞吐率：111.11req/s] [内存消耗：592.46kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'public.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/css/page.css
+[ info ] www.hands.com/index/login/css/page.css [运行时间：0.009000s][吞吐率：111.11req/s] [内存消耗：592.60kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'page.css',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/js/jquery.min.js
+[ info ] www.hands.com/index/login/js/jquery.min.js [运行时间：0.012000s][吞吐率：83.33req/s] [内存消耗：592.49kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'jquery.min.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logLOGO.png
+[ info ] www.hands.com/index/login/img/logLOGO.png [运行时间：0.009000s][吞吐率：111.11req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logLOGO.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/js/public.js
+[ info ] www.hands.com/index/login/js/public.js [运行时间：0.009000s][吞吐率：111.11req/s] [内存消耗：592.46kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'public.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logBanner.png
+[ info ] www.hands.com/index/login/img/logBanner.png [运行时间：0.009000s][吞吐率：111.11req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logBanner.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logName.png
+[ info ] www.hands.com/index/login/img/logName.png [运行时间：0.009000s][吞吐率：111.11req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logName.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logPwd.png
+[ info ] www.hands.com/index/login/img/logPwd.png [运行时间：0.013000s][吞吐率：76.92req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logPwd.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logYZM.png
+[ info ] www.hands.com/index/login/img/logYZM.png [运行时间：0.010000s][吞吐率：100.00req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logYZM.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.028000s][吞吐率：35.71req/s] [内存消耗：616.75kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logLOGO.png
+[ info ] www.hands.com/index/login/img/logLOGO.png [运行时间：0.010000s][吞吐率：100.00req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logLOGO.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logName.png
+[ info ] www.hands.com/index/login/img/logName.png [运行时间：0.010000s][吞吐率：100.00req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logName.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logBanner.png
+[ info ] www.hands.com/index/login/img/logBanner.png [运行时间：0.011000s][吞吐率：90.91req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logBanner.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logPwd.png
+[ info ] www.hands.com/index/login/img/logPwd.png [运行时间：0.013000s][吞吐率：76.92req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logPwd.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:29:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/img/logYZM.png
+[ info ] www.hands.com/index/login/img/logYZM.png [运行时间：0.013000s][吞吐率：76.92req/s] [内存消耗：592.65kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'logYZM.png',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:30:19+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.032000s][吞吐率：31.25req/s] [内存消耗：616.75kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:31:17+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.023000s][吞吐率：43.48req/s] [内存消耗：616.75kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:32:06+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.015000s][吞吐率：66.67req/s] [内存消耗：616.75kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:32:37+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.016000s][吞吐率：62.50req/s] [内存消耗：616.75kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:32:47+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.032000s][吞吐率：31.25req/s] [内存消耗：616.75kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:40:18+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.028000s][吞吐率：35.71req/s] [内存消耗：616.75kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:40:18+08:00 ] 127.0.0.1 127.0.0.1 GET /static/layui-2.2.3/js/layui.js
+[ info ] www.hands.com/static/layui-2.2.3/js/layui.js [运行时间：0.011000s][吞吐率：90.91req/s] [内存消耗：515.40kb] [文件加载：37]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'layui-2.2.3',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => 'layui.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:40:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.016000s][吞吐率：62.50req/s] [内存消耗：616.75kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:41:21+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.033000s][吞吐率：30.30req/s] [内存消耗：616.75kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:41:33+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.015000s][吞吐率：66.67req/s] [内存消耗：615.75kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:43:17+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.030000s][吞吐率：33.33req/s] [内存消耗：616.82kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:44:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.031000s][吞吐率：32.26req/s] [内存消耗：616.82kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:49:18+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.029000s][吞吐率：34.48req/s] [内存消耗：744.77kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:49:26+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.036000s][吞吐率：27.78req/s] [内存消耗：512.52kb] [文件加载：40]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '25',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'aaa',
+  'password' => 'aaa',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:53:52+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.043000s][吞吐率：23.26req/s] [内存消耗：686.06kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '25',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'aaa',
+  'password' => 'aaa',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = null LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-14T15:53:59+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.044000s][吞吐率：22.73req/s] [内存消耗：684.98kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '27',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'aaa',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = null LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-14T15:54:06+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.049000s][吞吐率：20.41req/s] [内存消耗：685.01kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '32',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'ceshi12345',
+  'password' => 'aaa',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = null LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-14T15:54:27+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.031000s][吞吐率：32.26req/s] [内存消耗：686.46kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '32',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'ceshi12345',
+  'password' => 'aaa',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = null LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-14T15:55:20+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.021000s][吞吐率：47.62req/s] [内存消耗：590.23kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:55:25+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.060000s][吞吐率：16.67req/s] [内存消耗：685.36kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'ceshi12345',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = null LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-14T15:55:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.019000s][吞吐率：52.63req/s] [内存消耗：589.46kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T15:55:50+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.039000s][吞吐率：25.64req/s] [内存消耗：687.71kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '28',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'ceshi12345',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = 'ceshi12345' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-03-14T15:56:53+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.020000s][吞吐率：50.00req/s] [内存消耗：689.99kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-14T17:39:36+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.049000s][吞吐率：20.41req/s] [内存消耗：700.88kb] [文件加载：50]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '23',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = 'admin' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-03-14T17:40:00+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.026000s][吞吐率：38.46req/s] [内存消耗：698.55kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-14T17:40:55+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.038000s][吞吐率：26.32req/s] [内存消耗：687.29kb] [文件加载：52]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [0]致命错误: Call to undefined function app\index\controller\think_ucenter_md5()[F:\www\hands\application\index\controller\Login.php:41]
+---------------------------------------------------------------
+[ 2018-03-14T17:42:30+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.043000s][吞吐率：23.26req/s] [内存消耗：699.76kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-14T17:42:39+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.049000s][吞吐率：20.41req/s] [内存消耗：698.70kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-14T17:42:56+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.016000s][吞吐率：62.50req/s] [内存消耗：699.78kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-14T17:43:08+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.040000s][吞吐率：25.00req/s] [内存消耗：855.20kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-14T17:43:42+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.040000s][吞吐率：25.00req/s] [内存消耗：699.78kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-14T17:44:32+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.027000s][吞吐率：37.04req/s] [内存消耗：699.78kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-14T17:45:04+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.026000s][吞吐率：38.46req/s] [内存消耗：699.78kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-14T17:45:22+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.025000s][吞吐率：40.00req/s] [内存消耗：699.78kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-14T17:45:47+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.049000s][吞吐率：20.41req/s] [内存消耗：699.78kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-14T17:45:57+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.014000s][吞吐率：71.43req/s] [内存消耗：698.70kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-14T17:46:13+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.030000s][吞吐率：33.33req/s] [内存消耗：699.78kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-14T18:02:59+08:00 ] 127.0.0.1 127.0.0.1 GET /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.025000s][吞吐率：40.00req/s] [内存消耗：590.23kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T18:03:06+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.041000s][吞吐率：24.39req/s] [内存消耗：774.38kb] [文件加载：54]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [0]method not exist:think\db\Query->updateLogin[F:\www\hands\thinkphp\library\think\db\Query.php:100]
+---------------------------------------------------------------
+[ 2018-03-14T18:04:03+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.050000s][吞吐率：20.00req/s] [内存消耗：777.24kb] [文件加载：54]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [0]致命错误: Call to undefined function app\index\model\data_auth_sign()[F:\www\hands\application\index\model\Promote.php:20]
+---------------------------------------------------------------
+[ 2018-03-14T18:04:40+08:00 ] 127.0.0.1 127.0.0.1 POST /index/login/login.html
+[ info ] www.hands.com/index/login/login.html [运行时间：0.031000s][吞吐率：32.26req/s] [内存消耗：790.41kb] [文件加载：51]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-03-14T18:04:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.026000s][吞吐率：38.46req/s] [内存消耗：521.32kb] [文件加载：46]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T18:04:42+08:00 ] 127.0.0.1 127.0.0.1 GET /login.html
+[ info ] www.hands.com/login.html [运行时间：0.021000s][吞吐率：47.62req/s] [内存消耗：503.65kb] [文件加载：43]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T18:05:03+08:00 ] 127.0.0.1 127.0.0.1 GET /login.html
+[ info ] www.hands.com/login.html [运行时间：0.015000s][吞吐率：66.67req/s] [内存消耗：578.70kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T18:05:27+08:00 ] 127.0.0.1 127.0.0.1 GET /login.html
+[ info ] www.hands.com/login.html [运行时间：0.021000s][吞吐率：47.62req/s] [内存消耗：578.70kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T18:05:34+08:00 ] 127.0.0.1 127.0.0.1 POST /login.html
+[ info ] www.hands.com/login.html [运行时间：0.029000s][吞吐率：34.48req/s] [内存消耗：778.31kb] [文件加载：51]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-14T18:05:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.017000s][吞吐率：58.82req/s] [内存消耗：521.30kb] [文件加载：46]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T18:05:36+08:00 ] 127.0.0.1 127.0.0.1 GET /login.html
+[ info ] www.hands.com/login.html [运行时间：0.015000s][吞吐率：66.67req/s] [内存消耗：503.63kb] [文件加载：43]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T18:07:16+08:00 ] 127.0.0.1 127.0.0.1 GET /login.html
+[ info ] www.hands.com/login.html [运行时间：0.016000s][吞吐率：62.50req/s] [内存消耗：174.77kb] [文件加载：43]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T18:07:23+08:00 ] 127.0.0.1 127.0.0.1 POST /login.html
+[ info ] www.hands.com/login.html [运行时间：0.047000s][吞吐率：21.28req/s] [内存消耗：449.22kb] [文件加载：51]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => NULL,
+    1 => 'login',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.hands.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '35',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15013653167',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Login->login[ F:\www\hands\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=u7858;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tab_promote` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tab_promote` WHERE  `account` = '15013653167' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-03-14T18:07:26+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.035000s][吞吐率：28.57req/s] [内存消耗：247.81kb] [文件加载：46]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\www\hands\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\index/index.html [ array (
+  0 => 'promote_auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:F:/www/hands/template/index\common/header.html[F:\www\hands\thinkphp\library\think\Template.php:259]
+---------------------------------------------------------------
+[ 2018-03-14T18:09:27+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.022000s][吞吐率：45.45req/s] [内存消耗：266.94kb] [文件加载：46]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\www\hands\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\index/index.html [ array (
+  0 => 'promote_auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:F:/www/hands/template/index\common/footer.html[F:\www\hands\thinkphp\library\think\Template.php:259]
+---------------------------------------------------------------
+[ 2018-03-14T18:09:38+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.030000s][吞吐率：33.33req/s] [内存消耗：277.66kb] [文件加载：50]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\www\hands\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\index/index.html [ array (
+  0 => 'promote_auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: gift[F:\www\hands\runtime\temp\12015efcf78a39018cd11363bc0f4dce.php:38]
+---------------------------------------------------------------
+[ 2018-03-14T18:12:02+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.028000s][吞吐率：35.71req/s] [内存消耗：281.72kb] [文件加载：50]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\www\hands\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\index/index.html [ array (
+  0 => 'promote_auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function U()[F:\www\hands\runtime\temp\12015efcf78a39018cd11363bc0f4dce.php:25]
+---------------------------------------------------------------
+[ 2018-03-14T18:12:15+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.022000s][吞吐率：45.45req/s] [内存消耗：236.72kb] [文件加载：50]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\www\hands\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\index/index.html [ array (
+  0 => 'promote_auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function U()[F:\www\hands\runtime\temp\12015efcf78a39018cd11363bc0f4dce.php:25]
+---------------------------------------------------------------
+[ 2018-03-14T18:12:28+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.014000s][吞吐率：71.43req/s] [内存消耗：251.31kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\www\hands\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\index/index.html [ array (
+  0 => 'promote_auth',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T18:12:28+08:00 ] 127.0.0.1 127.0.0.1 GET /index/img/headLogo.png
+[ info ] www.hands.com/index/img/headLogo.png [运行时间：0.006000s][吞吐率：166.67req/s] [内存消耗：146.35kb] [文件加载：38]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'img',
+    2 => 'headLogo.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/index/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T18:12:48+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.019000s][吞吐率：52.63req/s] [内存消耗：251.31kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\www\hands\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\index/index.html [ array (
+  0 => 'promote_auth',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T18:13:57+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.013000s][吞吐率：76.92req/s] [内存消耗：180.97kb] [文件加载：45]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\www\hands\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\index/index.html [ array (
+  0 => 'promote_auth',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T18:14:17+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.014000s][吞吐率：71.43req/s] [内存消耗：238.08kb] [文件加载：50]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\www\hands\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\index/index.html [ array (
+  0 => 'promote_auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: auth[F:\www\hands\runtime\temp\12015efcf78a39018cd11363bc0f4dce.php:21]
+---------------------------------------------------------------
+[ 2018-03-14T18:14:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.013000s][吞吐率：76.92req/s] [内存消耗：238.08kb] [文件加载：50]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\www\hands\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\index/index.html [ array (
+  0 => 'promote_auth',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: auth[F:\www\hands\runtime\temp\12015efcf78a39018cd11363bc0f4dce.php:21]
+---------------------------------------------------------------
+[ 2018-03-14T18:20:00+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.024000s][吞吐率：41.67req/s] [内存消耗：251.34kb] [文件加载：46]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\www\hands\application\index\controller\Index.php ]
+[ info ] [ VIEW ] F:/www/hands/template/index\index/index.html [ array (
+  0 => 'promote_auth',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-14T18:20:31+08:00 ] 127.0.0.1 127.0.0.1 GET /index/index/index.html
+[ info ] www.hands.com/index/index/index.html [运行时间：0.019000s][吞吐率：52.63req/s] [内存消耗：230.74kb] [文件加载：47]
+[ info ] [ LANG ] F:\www\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=gsq4i1ndei3q1olf8kr2lt3fg3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hands.com/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.146 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.hands.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: _SESSION[F:\www\hands\application\common\controller\Base.php:30]

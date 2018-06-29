@@ -1,0 +1,124 @@
+---------------------------------------------------------------
+[ 2018-06-29T08:52:13+08:00 ] 127.0.0.1 127.0.0.1 POST /
+[ info ] master.test.dphub.sandai.net:80/ [运行时间：0.226000s][吞吐率：4.42req/s] [内存消耗：279.39kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpStudy\WWW\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'content-length' => '256',
+  'content-type' => 'application/octet-stream',
+  'host' => 'master.test.dphub.sandai.net:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-29T08:52:13+08:00 ] 127.0.0.1 127.0.0.1 POST /
+[ info ] test.dphub.com:80/ [运行时间：0.006000s][吞吐率：166.67req/s] [内存消耗：278.91kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpStudy\WWW\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'content-length' => '320',
+  'content-type' => 'application/octet-stream',
+  'host' => 'test.dphub.com:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-29T08:52:23+08:00 ] 127.0.0.1 127.0.0.1 POST /
+[ info ] test.dphub.com:80/ [运行时间：0.004000s][吞吐率：250.00req/s] [内存消耗：278.91kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpStudy\WWW\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'content-length' => '320',
+  'content-type' => 'application/octet-stream',
+  'host' => 'test.dphub.com:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-29T08:52:33+08:00 ] 127.0.0.1 127.0.0.1 POST /
+[ info ] test.dphub.com:80/ [运行时间：0.008000s][吞吐率：125.00req/s] [内存消耗：278.91kb] [文件加载：49]
+[ info ] [ LANG ] E:\phpStudy\WWW\hands\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Close',
+  'content-length' => '320',
+  'content-type' => 'application/octet-stream',
+  'host' => 'test.dphub.com:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'bsp',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
