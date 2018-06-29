@@ -1,0 +1,198 @@
+{include file="common/header" /}
+
+{include file="common/memu" /}
+<link rel="stylesheet" href="../../../static/admin/css/recharge.css">
+<style>
+    #all_main{float:left;width: 600px;height: 400px;}
+    #week_all{float:left;width: 900px;height: 400px;margin-left: 20px;}
+    .subClassifyBox{margin-bottom: 60px;}
+    .subClassifyBox .tit{width: 100%;height: 60px;line-height: 60px;color: #FFF;background:#009688;}
+    .subClassifyBox .tit span{margin-left: 20px;font-size: 20px;}
+    .layui-elem-quote{padding:5px 15px;}
+    .cf{clear: both;}
+    .cf:after{zoom:1;}
+
+</style>
+<body>
+<div id="pageAll">
+    <div class="pageTop">
+        <div >
+            <img src="/static/index/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+                href="#">数据统计</a>&nbsp;-</span>&nbsp;提现统计
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="content cf">
+        <div class="subClassifyBox fl">
+            <div class="tit"><span>PC端</span></div>
+            <!-- 总提现 -->
+            <div class="totalRecharge">
+                <h1 class="layui-elem-quote">总提现</h1>
+
+                <!-- 提现金额 -->
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">总提现金额：</label>
+                        <div class="layui-input-block">
+                            {$all_data.complete_data}元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现待审核：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现审核不通过：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现打款中：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现完成：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 当日提现 -->
+            <div class="totalRecharge cf">
+                <h1 class="layui-elem-quote">当日提现</h1>
+
+                <!-- 提现金额 -->
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现金额：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现待审核：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现审核不通过：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现打款中：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现完成：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="subClassifyBox fl">
+            <div class="tit"><span>H5端</span></div>
+            <!-- 总提现 -->
+            <div class="totalRecharge">
+                <h1 class="layui-elem-quote">总提现</h1>
+
+                <!-- 提现金额 -->
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">总提现金额：</label>
+                        <div class="layui-input-block">
+                            {$all_data.complete_data}元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现待审核：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现审核不通过：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现打款中：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现完成：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 当日提现 -->
+            <div class="totalRecharge cf">
+                <h1 class="layui-elem-quote">当日提现</h1>
+
+                <!-- 提现金额 -->
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现金额：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现待审核：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现审核不通过：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现打款中：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">提现完成：</label>
+                        <div class="layui-input-block">
+                            元
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+</body>

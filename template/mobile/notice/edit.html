@@ -1,0 +1,86 @@
+{include file="common/header" /}
+
+{include file="common/memu" /}
+
+<script type="text/javascript" src="/static/ueeditor/ueditor.config.js"></script>
+
+<script type="text/javascript" src="/static/ueeditor/ueditor.all.min.js"></script>
+
+<script type="text/javascript" src="/static/js/admin/notice.js"></script>
+<body>
+
+<div id="pageAll">
+    <div class="pageTop">
+        <div >
+            <img src="/static/index/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+                href="#">公告管理</a>&nbsp;-</span>&nbsp;编辑公告
+        </div>
+    </div>
+
+    <div id="content" style="width: 100%;margin-top: 20px;">
+        <form class="layui-form" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">标题</label>
+                <div class="layui-input-inline" style="width: 30%">
+                    <input type="text" id="title" name="title" value="{$find.title}" lay-verify="required" placeholder="标题" autocomplete="off" class="layui-input">
+                    <input type="hidden" id="id" value="{$find.id}" name="id">
+                </div>
+            </div>
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">公告内容</label>
+                <div class="layui-input-block" style="width: 50%">
+                    <textarea id="demo" style="display: none;">{$find.content}</textarea>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" id="edit" lay-submit lay-filter="edit">立即提交</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        layui.use('layedit', function(){
+            var layedit = layui.layedit;
+            layedit.set({
+                uploadImage: {
+                    url: '/admin/notice/uploadImages.html' //接口url
+                    ,type: 'post' //默认post
+                }
+            });
+            var index = layedit.build('demo'); //建立编辑器
+            $("#edit").on('click',function(){
+                var id = $("#id").val();
+                var title=$("#title").val();
+                var content = layedit.getContent(index);
+                if(!title){
+                    layer.msg('请输入标题',{icon:2,time:2000});
+                    return false;
+                }
+                if(!content){
+                    layer.msg('请输入内容',{icon:2,time:2000});
+                    return false;
+                }
+                $.ajax({
+                    type:'post',
+                    url:'/admin/notice/edit.html',
+                    data:{id:id,title:title,content:content},
+                    dataType:'json',
+                    success:function(reslut){
+                        if(reslut.code == 1){
+                            layer.msg(reslut.msg,{icon:1,time:2000},function(){
+                                window.location.href='/notice.html';
+                            });
+                        }
+                        if(reslut.code == 0){
+                            layer.msg(reslut.msg,{icon:2,time:2000});
+                        }
+                    }
+                })
+                return false;
+            })
+        });
+    </script>
+</body>
